@@ -1,15 +1,52 @@
 @import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
 
+@font-face {
+    font-family: 'NextArt';
+    src: url('../fonts/NEXT\ ART_Light.otf') format('opentype');
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'NextArt';
+    src: url('../fonts/NEXT\ ART_Regular.otf') format('opentype');
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'NextArt';
+    src: url('../fonts/NEXT\ ART_SemiBold.otf') format('opentype');
+    font-weight: 600;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'NextArt';
+    src: url('../fonts/NEXT\ ART_Bold.otf') format('opentype');
+    font-weight: 700;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'NextArt';
+    src: url('../fonts/NEXT\ ART_Heavy.otf') format('opentype');
+    font-weight: 800;
+    font-style: normal;
+}
+
 * {
     box-sizing: border-box;
 }
 
 * {
-    font-family: 'Nunito Sans', sans-serif;
+    font-family: 'Nunito Sans', 'NextArt' sans-serif;
 }
+
 .container {
     max-width: 1180px;
 }
+
 .main {
     &_section {
         min-height: 985px;
@@ -17,26 +54,31 @@
         background: url(../img/first-bg.jpg) center (center/cover) no-repeat;
     }
 }
+
 .menu {
     list-style-type: none;
     display: flex;
     flex-direction: row;
     justify-content: center;
     margin: 24px 0;
+
     &_item {
         margin: 0 10px;
     }
+
     &_link {
         color: #fdfdfd;
         font-size: 18px;
         font-weight: 600;
         text-decoration: none;
         transition: 0.275s all;
+
         &:hover {
             color: #f2be22
         }
     }
 }
+
 .header {
     &_btn {
         width: 157px;
@@ -51,18 +93,61 @@
         font-weight: 600;
         line-height: 16px;
         transition: 0.275s all;
+
         &:hover {
-            color:#1f3e3e;
+            color: #1f3e3e;
             background-color: #fdfdfd;
         }
+    }
 
+    &_info {
+        margin-top: 463px;
+    }
+
+    &_title {
+        color: #fdfdfd;
+        font-family: 'NextArt';
+        font-size: 50px;
+        font-weight: bold;
+        line-height: 150%;
     }
 }
+
 .form {
     &_search {
         display: flex;
         justify-content: space-between;
+        // align-items: center;
+        height: 161px;
+        padding: 40px 42px 40px 42px;
+        border-radius: 10px;
         background: rgba(255, 255, 255, 0.2);
         backdrop-filter: blur(6px);
+        margin-top: 41px;
+    }
+
+    &_location {
+        width: 270px;
+        height: 52px;
+        background-color: unset;
+        padding: 0 16px;
+        border-radius: 8px;
+        border: solid 1px #e1e3e4;
+        color: #fdfdfd;
+        font-family: 'Nunito Sans';
+        font-size: 16px;
+        font-weight: bold;
+    }
+    &_label {
+        display: flex;
+        flex-direction: column;
+        outline: none;
+    }
+
+    &_span {
+        color: #fdfdfd;
+        font-family: 'Nunito Sans';
+        font-size: 14px;
+        font-weight: normal;
     }
 }
